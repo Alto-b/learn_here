@@ -27,5 +27,6 @@ jobs:
       - name: save apk
         uses: actions/upload-artifact@v7
         with:
+          retention-days: 1
           name: app-release_${{ github.run_number}}.apk
           path: build/app/outputs/flutter-apk/app-release.apk
